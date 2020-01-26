@@ -1,0 +1,43 @@
+<div align="center">
+    <h1>Select a Volunteer to Edit</h1>
+        <form name="edit" action="">
+        <select name="name" [(ngModel)]='name'>
+            <option *ngFor="let ieeeras of ieeerass" value={{ieeeras.name}}>{{ieeeras.name}}</option>
+    </select>
+ 
+    <input type="button" value="Edit Volunteer" (click)="update()">
+    <br>
+<div>
+  <h1>Update Values</h1>
+  <table><tr><td>
+    <label>Name:</label></td><td>
+ <input type="text" name="name" [(ngModel)]="name" value=name></td>
+</tr>
+<tr>
+  <td><label>Email:</label></td>
+  <td><input type="text" name="email" [(ngModel)]="email" value=email>
+</td>
+</tr>
+<tr>
+    <td><label>Mobile Number::</label></td>
+    <td><input type="number" name="mobile" [(ngModel)]="mobile" value=mobile>
+  </td>
+  </tr>
+  <tr>
+    <td><label>Semester:</label></td>
+    <td><input type="number" name="semester" [(ngModel)]="semester" value=semester>
+  </td>
+  </tr>
+  <tr>
+    <td><label>Department:</label></td>
+    <td><input type="text" name="dep" [(ngModel)]="dep" value=dep>
+  </td>
+  </tr>
+<tr align="center" >
+<td colspan="2">      
+<input type="button" value="Update Volunteer" (click)="editval()">
+</td>
+</tr>
+</table></div>
+  </form>
+        </div>

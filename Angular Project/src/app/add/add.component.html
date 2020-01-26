@@ -1,0 +1,45 @@
+
+<div align="center">
+    <h1>Add a New Event</h1>
+      <form name="form1" action="" method="POST">
+    <table>
+      <tr>
+        <td>
+      <label >Enter Event Name:</label>
+        </td>
+        <td>
+        <input type="text" name="name" placeholder="Enter Event Name" [(ngModel)]="name">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Chapter Name:</label>
+        </td>
+        <td>
+        <input type="text" name="chapter" placeholder="Enter Chapter Name" [(ngModel)]="chapter">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Event Description:</label>
+        </td>
+        <td>
+        <input type="text" name="description" placeholder="Enter Event Description" [(ngModel)]="description">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Event Date:</label>
+        </td>
+        <td>
+        <input type="date" name="date" placeholder="Enter Event Date" [(ngModel)]="date">
+      </td>
+      </tr>
+      <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Submit" (click)="saveval()">
+          </td>
+        </tr>
+    </table>
+    </form>
+    </div>

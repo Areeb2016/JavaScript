@@ -1,0 +1,19 @@
+<H1 align="center">List of All Volunteers</H1>
+<table align="center" border="1">
+  <tr><th>Sr. No</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobile Number</th>
+    <th>Semester</th>
+    <th>Department</th>
+  </tr>
+  
+  <tr *ngFor="let ieeeras of ieeerass let i=index">
+  <td>{{i+1}}</td>
+  <td>{{ieeeras.name}}</td>
+<td>{{ieeeras.email}}</td>
+<td>{{ieeeras.mobile}}</td>
+<td>{{ieeeras.semester}}</td>
+<td>{{ieeeras.dep}}</td>
+  </tr>
+</table>

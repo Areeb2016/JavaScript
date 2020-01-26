@@ -1,0 +1,38 @@
+<div align="center">
+    <h1>Select an Event to Edit</h1>
+        <form name="edit" action="">
+        <select name="name" [(ngModel)]='name'>
+            <option *ngFor="let event of events" value={{event.name}}>{{event.name}}</option>
+    </select>
+ 
+    <input type="button" value="Edit Event" (click)="update()">
+    <br>
+<div>
+  <h1>Update Values</h1>
+  <table><tr><td>
+    <label>Name:</label></td><td>
+ <input type="text" name="name" [(ngModel)]="name" value=name></td>
+</tr>
+<tr>
+  <td><label>Chapter:</label></td>
+  <td><input type="text" name="chapter" [(ngModel)]="chapter" value=chapter>
+</td>
+</tr>
+<tr>
+  <td><label>Description:</label></td>
+  <td><input type="text" name="description" [(ngModel)]="description" value=description>
+</td>
+</tr>
+<tr>
+  <td><label>Date:</label></td>
+  <td><input type="date" name="date" [(ngModel)]="date" value=date>
+</td>
+</tr>
+<tr align="center" >
+<td colspan="2">      
+<input type="button" value="Update Employee" (click)="editval()">
+</td>
+</tr>
+</table></div>
+  </form>
+        </div>

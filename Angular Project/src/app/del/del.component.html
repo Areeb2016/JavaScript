@@ -1,0 +1,10 @@
+<div align="center">
+    <h1>Select an Event to Delete</h1>
+        <form name="delform" action="">
+        <select name="name" [(ngModel)]='name'>
+        <option *ngFor="let event of events" value={{event.name}}>
+            {{event.name}}</option>
+        </select>
+    <input type="button" value="Delete Event" (click)="delval()">
+          </form>
+        </div>

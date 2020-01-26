@@ -1,0 +1,10 @@
+<div align="center">
+    <h1>Select a Volunteer to Delete</h1>
+        <form name="delform" action="">
+        <select name="name" [(ngModel)]='name'>
+        <option *ngFor="let ieeecs of ieeecss" value={{ieeecs.name}}>
+            {{ieeecs.name}}</option>
+        </select>
+    <input type="button" value="Delete Volunteer" (click)="delval()">
+          </form>
+        </div>

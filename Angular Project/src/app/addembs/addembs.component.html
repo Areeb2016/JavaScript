@@ -1,0 +1,53 @@
+
+<div align="center">
+    <h1>Add a New IEEE EMBS Volunteer</h1>
+      <form name="form1" action="" method="POST">
+    <table>
+      <tr>
+        <td>
+      <label >Enter Volunteer Name:</label>
+        </td>
+        <td>
+        <input type="text" name="name" placeholder="Enter Event Name" [(ngModel)]="name">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Email of Volunteer:</label>
+        </td>
+        <td>
+        <input type="text" name="email" placeholder="Enter Email of Volunteer" [(ngModel)]="email">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Volunteer Mobile Number:</label>
+        </td>
+        <td>
+        <input type="number" name="mobile" placeholder="Enter Volunteer Mobile Number" [(ngModel)]="mobile">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Volunteer Semester:</label>
+        </td>
+        <td>
+        <input type="number" name="semester" placeholder="Enter Volunteer Semester" [(ngModel)]="semester">
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label >Enter Volunteer Department:</label>
+        </td>
+        <td>
+        <input type="text" name="dep" placeholder="Enter Volunteer Department" [(ngModel)]="dep">
+      </td>
+      </tr>
+      <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Submit" (click)="saveval()">
+          </td>
+        </tr>
+    </table>
+    </form>
+    </div>

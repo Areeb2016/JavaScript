@@ -1,0 +1,17 @@
+<H1 align="center">List of All Events</H1>
+<table align="center" border="1">
+  <tr><th>Sr. No</th>
+    <th>Name</th>
+    <th>Chapter</th>
+    <th>Description</th>
+    <th>Date</th>
+  </tr>
+  
+  <tr *ngFor="let event of events let i=index">
+  <td>{{i+1}}</td>
+  <td>{{event.name}}</td>
+<td>{{event.chapter}}</td>
+<td>{{event.description}}</td>
+<td>{{event.date}}</td>
+  </tr>
+</table>
